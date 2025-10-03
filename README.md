@@ -27,3 +27,10 @@ A React application Showing the issue with `property.destructAll`
    ```bash
    yarn preview
    ```
+## Steps to reproduce
+
+1. Go to `/src/App.tsx` file
+2. Inside the ListItem function write props.destructAll
+3. Webstorm shows the option to destruct only this occurrence or all founded occurrences
+4. Select ALl occurrences (in this case 3)
+5. Webstorm will not replace all occurrences instead of keeps `_tmp_webstorm_`
